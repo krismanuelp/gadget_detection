@@ -22,8 +22,8 @@ import argparse
 from picamera import PiCamera
 from time import time, strftime
 
-from aiy.vision.leds import Leds
-from aiy.vision.leds import PrivacyLed
+from aiy.leds import Leds
+from aiy.leds import PrivacyLed
 from aiy.toneplayer import TonePlayer
 
 from aiy.vision.inference import CameraInference
