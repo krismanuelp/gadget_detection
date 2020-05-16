@@ -23,7 +23,7 @@ from aiy.vision.inference import ModelDescriptor
 from aiy.vision.models import utils
 
 # _COMPUTE_GRAPH_NAME = 'mobilenet_ssd_256res_0.125_person_cat_dog.binaryproto'
-_COMPUTE_GRAPH_NAME  =  os.getcwd() + '/gadget_detector.binaryproto'
+_COMPUTE_GRAPH_NAME  =  /gadget_detector.binaryproto'
 
 ANCHORS = utils.load_ssd_anchors('mobilenet_ssd_256res_0.125_person_cat_dog_anchors.txt')
 _NUM_ANCHORS = len(ANCHORS)
@@ -79,7 +79,7 @@ def _decode_detection_result(logit_scores, box_encodings, anchors,
 
     assert len(box_encodings) == 4 * _NUM_ANCHORS
     # chadwallacehart: modified below to handle a variable number of labels
-    assert len(logit_scores) == _NUM_LABELS * _NUM_ANCHORS
+    assert len(logit_scores) == 4 * _NUM_ANCHORS
 
     x0, y0 = offset
     width, height = image_size
